@@ -59,3 +59,21 @@
     height: 0.5rem;
     width: auto;
 }
+
+@media screen and (max-width: 768px) {
+    .intro-header img {
+        height: 3rem;
+    }
+    .intro-inner {
+        width: 90%;
+    }
+    .laptop img {
+        height: 5rem;
+    }
+    .intro-inner .title h3 {
+        font-size: 90%;
+    }
+    .prompt a {
+        font-size: 70%;
+    }
+}

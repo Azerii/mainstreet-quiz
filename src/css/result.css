@@ -61,3 +61,15 @@
     height: 3rem;
     width: auto;
 }
+
+@media screen and (max-width: 768px) {
+    .result-header img {
+        height: 3rem;
+    }
+    .title {
+        width: 50%;
+    }
+    .conclusion {
+        width: 80%;
+    }
+}

@@ -56,3 +56,15 @@
     background-color: transparent;
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+    .question-header img {
+        height: 3rem;
+    }
+    .question-inner {
+        width: 90%;
+    }
+    .question {
+        padding: 3rem 1rem;
+    }
+}
