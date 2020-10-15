@@ -9,19 +9,20 @@ import Landing from './Landing'
 
 
 export default function Intro() {
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(false)
     useEffect(() => {
-        setTimeout(() => {
-            setLoading(false)
-        }, 2000)
+        setLoading(true)
         //eslint-disable-next-line
     }, [])
     
-   
+    if (loading) {
+        setTimeout(() => {
+        setLoading(false)
+        }, 2000)
+        return <Landing />;
+    }     
         
     return (
-        <>
-        {loading ? <Landing /> :
         <div className='intro-wrapper'>
             <div className='intro-inner'>
                 <div className='intro-header'>
@@ -44,8 +45,6 @@ export default function Intro() {
                 
             </div>
         </div>
-        }
-        </>
         
     )
 }
