@@ -49,6 +49,7 @@
 }
 
 .prompt a {
+    color: #5C2685;
     font-size: 90%;
     border-bottom: 0.1rem solid #5C2685;
     text-decoration: none;
@@ -68,7 +69,7 @@
         width: 90%;
     }
     .laptop img {
-        height: 5rem;
+        height: 6rem;
     }
     .intro-inner .title h3 {
         font-size: 90%;

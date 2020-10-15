@@ -5,7 +5,6 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Question from './components/Question';
 import Result from './components/Result';
 import Intro from './components/Intro';
-import Landing from './components/Landing';
 
 function App() {
   

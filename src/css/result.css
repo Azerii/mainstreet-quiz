@@ -62,7 +62,30 @@
     width: auto;
 }
 
+.share .icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.share .icons img {
+    height: 2rem;
+    width: auto;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 0.5rem;
+    transition: all ease-out 250ms;
+}
+
+.share .icons img:hover {
+    border: 1px solid #5C2685;
+    border-radius: 50%;
+    background-color: rgba(92,38,133,0.3);
+}
+
 @media screen and (max-width: 768px) {
+    .result-inner {
+        width: 90%;
+    }
     .result-header img {
         height: 3rem;
     }
