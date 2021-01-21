@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import '../css/intro.css'
 
-import logo from '../assets/favicon.svg'
+import logo from '../assets/logo.svg'
 import laptop from '../assets/laptop.png'
 import arrow from '../assets/arrow.svg'
 import Landing from './Landing'

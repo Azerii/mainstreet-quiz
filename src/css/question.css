@@ -9,7 +9,7 @@
 }
 
 .question-header img {
-    height: 4rem;
+    height: 5rem;
     width: auto;
 }
 
@@ -52,17 +52,34 @@
 }
 
 .question-inner .next {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
 
+.question-inner .next img {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.question-inner .next .innerText {
+    font-size: 120%;
+    color: #5C2685;
+}
+
 @media screen and (max-width: 768px) {
     .question-header img {
-        height: 3rem;
+        height: 4rem;
     }
     .question-inner {
         width: 90%;
+    }
+    .question-inner .next-wrapper {
+        margin-top: 1rem;
     }
     .question {
         padding: 3rem 1rem;

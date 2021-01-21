@@ -2,7 +2,7 @@ import React from 'react'
 
 import '../css/result.css'
 
-import logo from '../assets/favicon.svg'
+import logo from '../assets/logo.svg'
 import good from '../assets/good.svg'
 import okay from '../assets/okay.svg'
 import bad from '../assets/bad.svg'
@@ -21,9 +21,9 @@ export default function Result() {
     return (
         <div className='result-wrapper'>
             <div className='result-inner'>
-                <div className='result-header'>
+                <a href='/' className='result-header'>
                     <img src={logo} alt='' />
-                </div>
+                </a>
                 <div className='title'>
                     <h3>Results</h3>
                     <div className='divider'></div>

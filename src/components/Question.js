@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 import '../css/question.css'
 
-import logo from '../assets/favicon.svg'
+import logo from '../assets/logo.svg'
 import arrow from '../assets/arrow.svg'
 
 export default function Question(props) {
@@ -46,6 +46,7 @@ export default function Question(props) {
                             updateCount()
                         }}>
                             <img src={arrow} alt='' />
+                            <span className='innerText'>NEXT</span>
                         </button>
                     </Link>}
                 </div>
