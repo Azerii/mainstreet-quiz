@@ -3,8 +3,8 @@
   "name": "Mainstreet Quiz",
   "icons": [
     {
-      "src": "favicon.svg",
-      "sizes": "109x116",
+      "src": "logo.svg",
+      "sizes": "103x75",
       "type": "image/svg"
     }
   ],
