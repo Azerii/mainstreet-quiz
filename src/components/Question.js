@@ -20,7 +20,6 @@ export default function Question(props) {
                 parsed[props.id] = props.no
                 localStorage.scores = JSON.stringify(parsed)
             }
-            console.log(localStorage.scores)
         }
     }
     return (
@@ -41,7 +40,7 @@ export default function Question(props) {
                 </button>
 
                 <div className='next-wrapper'>
-                    {clicked && <Link to={props.next} >
+                    {clicked && <Link to={`${process.env.PUBLIC_URL}${props.next}`} >
                         <button className='next' onClick={() => {
                             updateCount()
                         }}>

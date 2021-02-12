@@ -40,7 +40,7 @@ export default function Intro() {
                 
 
                 <div className='prompt'>
-                    <a href='/quiz/q1'>TAKE THIS QUIZ TO FIND OUT NOW <img src={arrow} alt='' /></a>
+                    <a href={`${process.env.PUBLIC_URL}/q1`}>TAKE THIS QUIZ TO FIND OUT NOW <img src={arrow} alt='' /></a>
                 </div>
                 
             </div>

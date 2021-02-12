@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import './App.css';
 
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Question from './components/Question';
 import Result from './components/Result';
 import Intro from './components/Intro';
@@ -45,72 +45,73 @@ function App() {
     
     "Would you immediately click on a link sent to you by an acquaintance?",
   ]
+
   return (
-    <Router>
+    <Router basename={'/safetyquiz'}>
       <div className="App">
         <Switch>
-          <Route exact path='/' component={Intro} />
-          <Route exact path='/home' component={Intro} />
-          <Route exact path='/quiz' component={Intro} />
-          <Route exact path='/results' component={Result} />
+          <Route exact path={`${process.env.PUBLIC_URL}/`} component={Intro} />
+          <Route exact path={`${process.env.PUBLIC_URL}/home`} component={Intro} />
+          <Route exact path={`${process.env.PUBLIC_URL}/quiz`} component={Intro} />
+          <Route exact path={`${process.env.PUBLIC_URL}/results`} component={Result} />
 
           <Route 
             exact
-            path='/quiz/q1'
-            component={() => <Question question={questions[0]} id={1} yes={0} no={1} next={'/quiz/q2'} />}
+            path={`${process.env.PUBLIC_URL}/q1`}
+            component={() => <Question question={questions[0]} id={1} yes={0} no={1} next={'/q2'} />}
           />
 
           <Route 
             exact
-            path='/quiz/q2'
-            component={() => <Question question={questions[1]} id={2} yes={1} no={0} next={'/quiz/q3'} />}
+            path={`${process.env.PUBLIC_URL}/q2`}
+            component={() => <Question question={questions[1]} id={2} yes={1} no={0} next={'/q3'} />}
           />
 
           <Route 
             exact
-            path='/quiz/q3'
-            component={() => <Question question={questions[2]} id={3} yes={1} no={0} next={'/quiz/q4'} />}
+            path={`${process.env.PUBLIC_URL}/q3`}
+            component={() => <Question question={questions[2]} id={3} yes={1} no={0} next={'/q4'} />}
           />
 
           <Route 
             exact
-            path='/quiz/q4'
-            component={() => <Question question={questions[3]} id={4} yes={1} no={0} next={'/quiz/q5'} />}
+            path={`${process.env.PUBLIC_URL}/q4`}
+            component={() => <Question question={questions[3]} id={4} yes={1} no={0} next={'/q5'} />}
           />
 
           <Route 
             exact
-            path='/quiz/q5'
-            component={() => <Question question={questions[4]} id={5} yes={0} no={1} next={'/quiz/q6'} />}
+            path={`${process.env.PUBLIC_URL}/q5`}
+            component={() => <Question question={questions[4]} id={5} yes={0} no={1} next={'/q6'} />}
           />
 
           <Route 
             exact
-            path='/quiz/q6'
-            component={() => <Question question={questions[5]} id={6} yes={0} no={1} next={'/quiz/q7'} />}
+            path={`${process.env.PUBLIC_URL}/q6`}
+            component={() => <Question question={questions[5]} id={6} yes={0} no={1} next={'/q7'} />}
           />
 
           <Route 
             exact
-            path='/quiz/q7'
-            component={() => <Question question={questions[6]} id={7} yes={1} no={0} next={'/quiz/q8'} />}
+            path={`${process.env.PUBLIC_URL}/q7`}
+            component={() => <Question question={questions[6]} id={7} yes={1} no={0} next={'/q8'} />}
           />
 
           <Route 
             exact
-            path='/quiz/q8'
-            component={() => <Question question={questions[7]} id={8} yes={0} no={1} next={'/quiz/q9'} />}
+            path={`${process.env.PUBLIC_URL}/q8`}
+            component={() => <Question question={questions[7]} id={8} yes={0} no={1} next={'/q9'} />}
           />
 
           <Route 
             exact
-            path='/quiz/q9'
-            component={() => <Question question={questions[8]} id={9} yes={0} no={1} next={'/quiz/q10'} />}
+            path={`${process.env.PUBLIC_URL}/q9`}
+            component={() => <Question question={questions[8]} id={9} yes={0} no={1} next={'/q10'} />}
           />
 
           <Route 
             exact
-            path='/quiz/q10'
+            path={`${process.env.PUBLIC_URL}/q10`}
             component={() => <Question question={questions[9]} id={10} yes={0} no={1} next={'/results'} />}
           />
           
